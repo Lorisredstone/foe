@@ -1,5 +1,4 @@
 from asyncio import sleep
-from token import token
 import discord
 import json
 
