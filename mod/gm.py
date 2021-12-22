@@ -11,11 +11,11 @@ async def gm(message, color):
         embed = discord.Embed(color=color, title="Commandes $gm", description="**$gm list**: liste les GM\n**$gm info *<id>* *<lvl>***: Affiche des informations sur le GM")
         await message.channel.send(embed=embed)
 
-    elif message.content == "$gm list":
+    elif message.content in ["$gm list", "$gm liste"]:
         liste = ", ".join([f"[{traduction.GMname[b][0]}] *{traduction.GMname[b][1]}*" for b in traduction.GMname.keys()])
         embed = discord.Embed(color=color, title="Liste des GM", description=liste)
         await message.channel.send(embed=embed)
-    
+
     elif message.content.startswith("$gm info"):
         try:
             GMdico = int(message.content.split(" ")[2])
