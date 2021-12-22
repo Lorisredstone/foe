@@ -87,3 +87,4 @@ GM_ID = {
 'Terracotta Army': 'X_VirtualFuture_Landmark1',
 'Himeji Castle': 'X_VirtualFuture_Landmark2'
 }
+
