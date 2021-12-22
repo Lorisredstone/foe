@@ -88,7 +88,6 @@ GM_ID = {
 'Himeji Castle': 'X_VirtualFuture_Landmark2'
 }
 
-# TODO: traduire se dico
 production = {
 "support boost": "bonus de réserve de soutien",
 "clan goods": "ressources de la guilde",
@@ -101,7 +100,7 @@ production = {
 "helping hands": "aide entre membres",
 "population": "population",
 "random goods": "ressources",
-"random goods afterModern": "ressources non raffinées",
+"random goods afterModern": "ressources après l'ère moderne (N.R.)",
 "military boost": "bonus militaire",
 "fierce resistance": "résistance",
 "money": "pièces",

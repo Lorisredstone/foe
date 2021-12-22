@@ -31,5 +31,10 @@ async def on_message(message):
     elif message.content.startswith("$gm"):
         color = random_color()
         await gm.gm(message, color)
+
+    elif message.content.startswith("$stop"):
+        if message.author.id in [652889258343792661, 623570950754926603]:
+            await message.channel.send(embed=discord.Embed(color=0xFF0000, title="Arrêt du bot"))
+            await bot.close()
         
 bot.run(config_private["discord_token"])
