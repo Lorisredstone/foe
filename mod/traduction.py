@@ -40,7 +40,7 @@ GMname = {
 'Voyager V1': (39,'Voyager V1'),
 'Truce Tower': (40,"Tour de la trêve"),
 'Terracotta Army': (41,'Armée de terre cuite'),
-'Himeji Castle': (42, 'Château de Himeji'),
+'Himeji Castle': (42,'Château de Himeji'),
 }
 
 GM_ID = {
@@ -123,4 +123,27 @@ production = {
 "aid goods"
 "advanced tactics"
 "spoils of war"
+}
+
+ere = {
+'AllAge': 'tous les âges',
+'ArcticFuture': 'futur arctique',
+'BronzeAge': 'âge du bronze',
+'ColonialAge': 'âge colonial',
+'ContemporaryEra': 'ère contemporaine',
+'EarlyMiddleAge': 'haut moyen âge',
+'FutureEra': 'ère du turfu',
+'HighMiddleAge': 'moyen âge classique',
+'IndustrialAge': 'âge industriel',
+'IronAge': 'âge du fer',
+'LateMiddleAge': 'renaissance',
+'ModernEra': 'ère moderne',
+'OceanicFuture': 'futur océanique',
+'PostModernEra': 'ère post-moderne',
+'ProgressiveEra': 'ère progressiste',
+'SpaceAgeAsteroidBelt': "ère spatiale - ceinture d'astéroïdes",
+'SpaceAgeMars': 'ère spatiale - Mars',
+'SpaceAgeVenus': 'ère spatiale - Vénus',
+'TomorrowEra': 'ère de demain',
+'VirtualFuture': 'futur virtuel',
 }
