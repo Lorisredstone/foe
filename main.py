@@ -1,12 +1,15 @@
-import asyncio
-import discord
-import json
+import asyncio, discord, json, random
 import mod.gm as gm
 
 config_private = json.load(open('config/private.json'))
 config = json.load(open('config/config.json'))
 
 bot = discord.Client()
+
+def random_color():
+    color = [0xFF5733, 0xFF8C33, 0xFFB833, 0xFFCD33, 0xFFF033, 0xB8FF33, 0x8CFF33, 0x33FF33, 0x33FF8C, 0x33FFB8, 0x33FFCD, 0x33FFF0, 0x33B8FF, 0x338CFF, 0x3333FF, 0x8C33FF, 0xB833FF, 0xCD33FF, 0xF033FF, 0xFF33F0, 0xFF33CD, 0xFF33B8, 0xFF338C, 0xFF3333]
+    return random.choice(color)
+
 
 @bot.event
 async def on_ready():
@@ -24,6 +27,7 @@ async def on_message(message):
         await message.channel.send("Voici la liste des commandes: $ping, $help")
     
     if message.content.startswith("$gm"):
-        await gm.gm(message)
+        color = random_color()
+        await gm.gm(message, color)
         
 bot.run(config_private["discord_token"])

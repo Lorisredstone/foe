@@ -1,5 +1,7 @@
 import discord
 
-async def gm(message):
+async def gm(message, color):
+    print(color)
     if message.content == "$gm help":
-        await message.channel.send("Voici la liste des commandes: $gm help, $gm list, $gm add, $gm remove, $gm clear")
+        embed = discord.Embed(color=color, title="commande $gm", description="$gm list\n$gm info <nom> <lvl>")
+        await message.channel.send(embed=embed)
