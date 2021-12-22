@@ -1,7 +1,5 @@
 import discord, requests
-
-def get_batiments():
-    return list(requests.get("https://api.foe-helper.com/v1/LegendaryBuilding/list").json()["response"]["buildings"])
+import mod.traduction as traduction
 
 
 def get_batiment_info(batiment, lvl):
@@ -10,5 +8,9 @@ def get_batiment_info(batiment, lvl):
 
 async def gm(message, color):
     if message.content == "$gm help":
-        embed = discord.Embed(color=color, title="commande $gm", description="$gm list\n$gm info <nom> <lvl>")
+        embed = discord.Embed(color=color, title="Commandes $gm", description="**$gm list**: liste les GM\n**$gm info *<nom>* *<lvl>***: Affiche des informations sur le GM")
+        await message.channel.send(embed=embed)
+    elif message.content == "$gm list":
+        liste = ", ".join([traduction.GMname[b] for b in traduction.GMname.keys()])
+        embed = discord.Embed(color=color, title="Liste des GM", description=liste)
         await message.channel.send(embed=embed)
