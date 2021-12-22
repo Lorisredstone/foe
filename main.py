@@ -24,6 +24,6 @@ async def on_message(message):
         await message.channel.send("Voici la liste des commandes: $ping, $help")
     
     if message.content.startswith("$gm"):
-        await gm(message)
+        await gm.gm(message)
         
 bot.run(config_private["discord_token"])
