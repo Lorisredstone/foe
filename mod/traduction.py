@@ -88,6 +88,7 @@ GM_ID = {
 'Himeji Castle': 'X_VirtualFuture_Landmark2'
 }
 
+# TODO: traduire se dico
 production = {
 "support boost": 
 "clan goods"
