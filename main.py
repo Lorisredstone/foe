@@ -23,10 +23,12 @@ async def on_message(message):
     if message.content == "$ping":
         await message.channel.send("pong")
 
-    if message.content == "$help":
-        await message.channel.send("Voici la liste des commandes: $ping, $help")
+    elif message.content == "$help":
+        color = random_color()
+        embed = discord.Embed(color=color, title="Commandes disponiles", description="**$gm list**: liste les GM\n**$gm info *<id>* *<lvl>***: Affiche des informations sur le GM")
+        await message.channel.send(embed=embed)
     
-    if message.content.startswith("$gm"):
+    elif message.content.startswith("$gm"):
         color = random_color()
         await gm.gm(message, color)
         
