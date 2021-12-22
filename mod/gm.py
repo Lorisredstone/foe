@@ -30,7 +30,7 @@ async def gm(message, color):
             embed = discord.Embed(color=color, title=f"{traduction.GMname[batiment][1]} - lvl{GMlvl}", description=f"**ère**: {traduction.ere[batiment_info['era']]}\n**PF lvl{GMlvl}**: {batiment_info['total_fp']}\n**produit**:")
             embed.set_thumbnail(url=batiment_info["image"])
             for k in batiment_info["rewards"].keys():
-                embed.add_field(name=k.replace("_", " "), value=batiment_info["rewards"][k])
+                embed.add_field(name=traduction.production[k.replace("_", " ")], value=batiment_info["rewards"][k])
             await message.channel.send(embed=embed)
         except Exception as e:
             await message.channel.send(f"oups une erreur est survenue:\n{e}")

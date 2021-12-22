@@ -90,40 +90,40 @@ GM_ID = {
 
 # TODO: traduire se dico
 production = {
-"support boost": 
-"clan goods"
-"totem drop"
-"happiness"
-"supplies"
-"medals"
-"critical hit chance"
-"strategy points"
-"helping hands"
-"population"
-"random goods"
-"random goods afterModern"
-"military boost"
-"fierce resistance"
-"money"
-"plunder repel"
-"contribution boost"
-"aid boost"
-"money boost"
-"supplies boost"
-"plunder and pillage"
-"first strike"
-"double collection"
-"penal unit"
-"quest boost"
-"diplomatic gifts"
-"special goods"
-"previous era goods"
-"missile launch"
-"mysterious shards"
-"plunder goods"
-"aid goods"
-"advanced tactics"
-"spoils of war"
+"support boost": "bonus de réserve de soutien",
+"clan goods": "ressources de la guilde",
+"totem drop": "totem",
+"happiness": "satisfaction",
+"supplies": "ressources",
+"medals": "medailles",
+"critical hit chance": "chance de coup critique",
+"strategy points": "points de forge",
+"helping hands": "aide entre membres",
+"population": "population",
+"random goods": "ressources",
+"random goods afterModern": "ressources non raffinées",
+"military boost": "bonus militaire",
+"fierce resistance": "résistance",
+"money": "pièces",
+"plunder repel": "répulsion de pillage",
+"contribution boost": "bonus de contribution",
+"aid boost": "bonus d'aide",
+"money boost": "bonus de pièces",
+"supplies boost": "bonus de ressources",
+"plunder and pillage": "pillage",
+"first strike": "coup de main",
+"double collection": "collecte doublée",
+"penal unit": "unité militaire",
+"quest boost": "bonus de quête",
+"diplomatic gifts": "cadeaux diplomatiques",
+"special goods": "ressources spéciales",
+"previous era goods": "ressources de l'ère précédente",
+"missile launch": "lancement de missiles",
+"mysterious shards": "fragments mystérieux",
+"plunder goods": "ressources pillées",
+"aid goods": "ressources d'aide",
+"advanced tactics": "tactique avancée",
+"spoils of war": "butin de guerre",
 }
 
 ere = {
